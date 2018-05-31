@@ -4,8 +4,8 @@ module Problem06 (isPalindrome, test) where
 
   import Test.HUnit ((~?=), Test(TestCase, TestList))
 
-  isPalindrome :: [a] -> Bool
-  isPalindrome = error "Not implemented"
+  isPalindrome :: Eq a => [a] -> Bool
+  isPalindrome a = a == reverse a
 
   test = TestList
     [ isPalindrome [1, 2, 3] ~?= False 
