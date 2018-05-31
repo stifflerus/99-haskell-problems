@@ -1,4 +1,4 @@
-module Problem5 (myReverse, test) where
+module Problem05 (myReverse, test) where
   -- (*) Reverse a list. 
 
   import Test.HUnit ((~?=), Test(TestCase, TestList))

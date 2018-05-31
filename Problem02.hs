@@ -1,4 +1,4 @@
-module Problem2 (myButLast, test) where
+module Problem02 (myButLast, test) where
   -- (*) Find the last but one element of a list.
 
   import Test.HUnit ((~?=), Test(TestList, TestCase))

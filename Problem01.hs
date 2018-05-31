@@ -1,4 +1,4 @@
-module Problem1 (myLast, test) where
+module Problem01 (myLast, test) where
   -- (*) Find the last element of a list. 
 
   import Test.HUnit ((~?=), Test(TestList, TestCase))

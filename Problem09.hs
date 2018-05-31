@@ -1,4 +1,4 @@
-module Problem9 (pack, test) where
+module Problem09 (pack, test) where
   -- (**) Pack consecutive duplicates of list elements into sublists. 
   -- If a list contains repeated elements they should be placed in separate 
   -- sublists. 

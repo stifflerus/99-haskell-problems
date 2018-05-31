@@ -1,4 +1,4 @@
-module Problem4 (myLength, test) where
+module Problem04 (myLength, test) where
   -- (*) Find the number of elements of a list. 
 
   import Test.HUnit (Test(TestCase, TestList), (~?=))
