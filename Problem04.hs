@@ -5,7 +5,7 @@ module Problem04 (myLength, test) where
 
   myLength :: [a] -> Int
   myLength [] = 0
-  myLength x = 1 + (myLength $ tail x)
+  myLength x = 1 + myLength (tail x)
 
   test = TestList
     [ myLength [123, 456, 789] ~?= 3
