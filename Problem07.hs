@@ -1,4 +1,4 @@
-module Problem07 (myFlatten, test) where
+module Problem07 (myFlatten, NestedList(Elem, List), test) where
   -- (**) Flatten a nested list structure. 
   -- Transform a list, possibly holding lists as elements into a `flat' list by 
   -- replacing each list with its elements (recursively). 
@@ -8,7 +8,8 @@ module Problem07 (myFlatten, test) where
   data NestedList a = Elem a | List [NestedList a]
 
   myFlatten :: NestedList a -> [a]
-  myFlatten = error "Not implemented"
+  myFlatten (Elem a) = [a]
+  myFlatten (List a) = concatMap myFlatten a
 
   test = TestList
     [ myFlatten (Elem 5) ~?= [5] 
