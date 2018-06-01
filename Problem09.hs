@@ -5,8 +5,10 @@ module Problem09 (pack, test) where
 
   import Test.HUnit ((~?=), Test(TestCase, TestList))
 
-  pack :: [a] -> [[a]]
-  pack = error "Not implemented"
+  pack :: Eq a => [a] -> [[a]]
+  pack [] = []
+  pack [x] = [[x]]
+  pack x = takeWhile (== head x) x : pack (dropWhile (== head x) x)
 
   test = TestList
     [ pack 
