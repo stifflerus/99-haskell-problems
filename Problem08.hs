@@ -5,8 +5,10 @@ module Problem08 (compress, test) where
 
   import Test.HUnit ((~?=), Test(TestCase, TestList))
 
-  compress :: [a] -> [a]
-  compress = error "Not implemented"
+  compress :: Eq a => [a] -> [a]
+  compress [] = []
+  compress [x] = [x]
+  compress (x:xs) = x : compress (dropWhile (== x) xs)
 
   test = TestList
     [ compress "aaaabccaadeeee" ~?= "abcade" ]
