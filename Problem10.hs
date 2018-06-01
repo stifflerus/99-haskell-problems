@@ -5,9 +5,11 @@ module Problem10 (encode, test) where
   -- the number of duplicates of the element E. 
 
   import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Problem09 (pack)
+  import Control.Arrow ((&&&))
 
-  encode :: [a] -> [(Int, a)]
-  encode = error "Not implemented"
+  encode :: Eq a => [a] -> [(Int, a)]
+  encode = map (length &&& head) . pack
 
   test = TestList
     [ encode "aaaabccaadeeee" ~?=
