@@ -3,7 +3,7 @@ version:             0.1.0.0
 github:              "stifflerus/haskell-problems"
 license:             BSD3
 author:              "Robert Stiffler"
-maintainer:          "stiffler.us"
+maintainer:          "robert@stiffler.us"
 copyright:           "2018 Robert Stiffler"
 
 extra-source-files:
