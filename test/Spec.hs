@@ -12,6 +12,7 @@ module Main where
   import qualified Problem09 (test)
   import qualified Problem10 (test)
   import qualified Problem11 (test)
+  import qualified Problem12 (test)
 
   main :: IO Counts
   main = runTestTT testCases
@@ -27,5 +28,6 @@ module Main where
     , Problem08.test
     , Problem09.test
     , Problem10.test
-    , Problem11.test ]
+    , Problem11.test
+    , Problem12.test ]
 
