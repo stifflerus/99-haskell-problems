@@ -3,7 +3,7 @@ module Problem09 (pack, test) where
   -- If a list contains repeated elements they should be placed in separate 
   -- sublists. 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
 
   pack :: Eq a => [a] -> [[a]]
   pack [] = []

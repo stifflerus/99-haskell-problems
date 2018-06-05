@@ -3,7 +3,7 @@ module Problem07 (myFlatten, NestedList(Elem, List), test) where
   -- Transform a list, possibly holding lists as elements into a `flat' list by 
   -- replacing each list with its elements (recursively). 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
 
   data NestedList a = Elem a | List [NestedList a]
 

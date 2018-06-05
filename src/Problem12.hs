@@ -3,7 +3,7 @@ module Problem12 (test) where
   -- Given a run-length code list generated as specified in problem 11. 
   -- Construct its uncompressed version.
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
   import Problem11 (Encoding(Single, Multiple))
 
   decodeModified :: [Encoding a] -> [a]

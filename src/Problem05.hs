@@ -1,7 +1,7 @@
 module Problem05 (myReverse, test) where
   -- (*) Reverse a list. 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
 
   myReverse :: [a] -> [a]
   myReverse [] = []

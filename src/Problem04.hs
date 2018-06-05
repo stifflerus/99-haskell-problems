@@ -1,7 +1,7 @@
 module Problem04 (myLength, test) where
   -- (*) Find the number of elements of a list. 
 
-  import Test.HUnit (Test(TestCase, TestList), (~?=))
+  import Test.HUnit (Test(TestList), (~?=))
 
   myLength :: [a] -> Int
   myLength [] = 0

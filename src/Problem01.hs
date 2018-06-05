@@ -1,7 +1,7 @@
 module Problem01 (myLast, test) where
   -- (*) Find the last element of a list. 
 
-  import Test.HUnit ((~?=), Test(TestList, TestCase))
+  import Test.HUnit ((~?=), Test(TestList))
 
   myLast :: [a] -> a
   myLast [x] = x

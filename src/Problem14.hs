@@ -1,7 +1,7 @@
 module Problem14 (dupli, test) where
   -- (*) Duplicate the elements of a list. 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
 
   dupli :: [a] -> [a]
   dupli [] = []

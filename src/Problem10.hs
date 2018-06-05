@@ -4,7 +4,7 @@ module Problem10 (encode, test) where
   -- Consecutive duplicates of elements are encoded as lists (N E) where N is 
   -- the number of duplicates of the element E. 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
   import Problem09 (pack)
   import Control.Arrow ((&&&))
 

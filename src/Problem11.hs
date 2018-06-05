@@ -4,7 +4,7 @@ module Problem11 (encodeModified, Encoding(Single, Multiple), test) where
   -- duplicates it is simply copied into the result list. Only elements with 
   -- duplicates are transferred as (N E) lists. 
 
-  import Test.HUnit ((~?=), Test(TestCase, TestList))
+  import Test.HUnit ((~?=), Test(TestList))
   import Problem10 (encode)
 
   data Encoding a = Single a | Multiple Int a deriving (Eq, Show)
