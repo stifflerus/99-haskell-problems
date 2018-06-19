@@ -1,12 +1,12 @@
 module Problem02 (myButLast, test) where
-  -- (*) Find the last but one element of a list.
+-- (*) Find the last but one element of a list.
 
-  import Test.HUnit ((~?=), Test(TestList))
+import           Test.HUnit (Test (TestList), (~?=))
 
-  myButLast :: [a] -> a
-  myButLast [x,_] = x
-  myButLast (_:xs) = myButLast xs 
+myButLast :: [a] -> a
+myButLast [x,_]  = x
+myButLast (_:xs) = myButLast xs
 
-  test = TestList
-    [ myButLast [1,2,3,4] ~?=  3
-    , myButLast ['a'..'z'] ~?= 'y' ]
+test = TestList
+  [ myButLast [1,2,3,4] ~?=  3
+  , myButLast ['a'..'z'] ~?= 'y' ]
