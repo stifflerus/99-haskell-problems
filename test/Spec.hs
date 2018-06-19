@@ -1,37 +1,38 @@
 module Main where
 
-  import Test.HUnit (Test(TestList), runTestTT, Counts)
-  import qualified Problem01 (test)
-  import qualified Problem02 (test)
-  import qualified Problem03 (test)
-  import qualified Problem04 (test)
-  import qualified Problem05 (test)
-  import qualified Problem06 (test)
-  import qualified Problem07 (test)
-  import qualified Problem08 (test)
-  import qualified Problem09 (test)
-  import qualified Problem10 (test)
-  import qualified Problem11 (test)
-  import qualified Problem12 (test)
-  import qualified Problem14 (test)
-  import qualified Problem15 (test)
+import qualified Problem01Test (test)
+import qualified Problem02Test (test)
+import qualified Problem03Test (test)
+import qualified Problem04Test (test)
+import qualified Problem05Test (test)
+import qualified Problem06Test (test)
+import qualified Problem07Test (test)
+import qualified Problem08Test (test)
+import qualified Problem09Test (test)
+import qualified Problem10Test (test)
+import qualified Problem11Test (test)
+import qualified Problem12Test (test)
+import qualified Problem14Test (test)
+import qualified Problem15Test (test)
+import           Test.HUnit    (Counts, Test (TestList), runTestTT)
 
-  main :: IO Counts
-  main = runTestTT testCases
+main :: IO Counts
+main = runTestTT testCases
 
-  testCases = TestList
-    [ Problem01.test 
-    , Problem02.test
-    , Problem03.test
-    , Problem04.test
-    , Problem05.test 
-    , Problem06.test 
-    , Problem07.test
-    , Problem08.test
-    , Problem09.test
-    , Problem10.test
-    , Problem11.test
-    , Problem12.test
-    , Problem14.test
-    , Problem15.test ]
-
+testCases =
+  TestList
+    [ Problem01Test.test
+    , Problem02Test.test
+    , Problem03Test.test
+    , Problem04Test.test
+    , Problem05Test.test
+    , Problem06Test.test
+    , Problem07Test.test
+    , Problem08Test.test
+    , Problem09Test.test
+    , Problem10Test.test
+    , Problem11Test.test
+    , Problem12Test.test
+    , Problem14Test.test
+    , Problem15Test.test
+    ]
