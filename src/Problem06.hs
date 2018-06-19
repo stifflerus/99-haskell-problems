@@ -1,3 +1,5 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem06
   ( isPalindrome
   , test
@@ -5,9 +7,9 @@ module Problem06
 
 -- (*) Find out whether a list is a palindrome.
 -- A palindrome can be read forward or backward; e.g. (x a m a x).
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-isPalindrome :: Eq a => [a] -> Bool
+isPalindrome ∷ Eq a ⇒ [a] → Bool
 isPalindrome a = a == reverse a
 
 test =

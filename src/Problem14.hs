@@ -1,12 +1,14 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem14
   ( dupli
   , test
   ) where
 
 -- (*) Duplicate the elements of a list.
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-dupli :: [a] -> [a]
+dupli ∷ [a] → [a]
 dupli []     = []
 dupli [x]    = [x, x]
 dupli (x:xs) = x : x : dupli xs

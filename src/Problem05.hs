@@ -1,12 +1,14 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem05
   ( myReverse
   , test
   ) where
 
 -- (*) Reverse a list.
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-myReverse :: [a] -> [a]
+myReverse ∷ [a] → [a]
 myReverse []     = []
 myReverse [x]    = [x]
 myReverse (x:xs) = myReverse xs ++ [x]

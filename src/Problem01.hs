@@ -1,12 +1,14 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem01
   ( myLast
   , test
   ) where
 
 -- (*) Find the last element of a list.
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-myLast :: [a] -> a
+myLast ∷ [a] → a
 myLast [x]    = x
 myLast (_:xs) = myLast xs
 

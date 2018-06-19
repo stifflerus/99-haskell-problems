@@ -1,12 +1,14 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem04
   ( myLength
   , test
   ) where
 
 -- (*) Find the number of elements of a list.
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-myLength :: [a] -> Int
+myLength ∷ [a] → Int
 myLength [] = 0
 myLength x  = 1 + myLength (tail x)
 

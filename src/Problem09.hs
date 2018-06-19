@@ -1,3 +1,5 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem09
   ( pack
   , test
@@ -6,9 +8,9 @@ module Problem09
 -- (**) Pack consecutive duplicates of list elements into sublists.
 -- If a list contains repeated elements they should be placed in separate
 -- sublists.
-import           Test.HUnit (Test (TestList), (~?=))
+import Test.HUnit (Test (TestList), (~?=))
 
-pack :: Eq a => [a] -> [[a]]
+pack ∷ Eq a ⇒ [a] → [[a]]
 pack []  = []
 pack [x] = [[x]]
 pack x   = takeWhile (== head x) x : pack (dropWhile (== head x) x)

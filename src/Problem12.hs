@@ -1,3 +1,5 @@
+{-# LANGUAGE UnicodeSyntax #-}
+
 module Problem12
   ( test
   ) where
@@ -5,13 +7,13 @@ module Problem12
 -- (**) Decode a run-length encoded list.
 -- Given a run-length code list generated as specified in problem 11.
 -- Construct its uncompressed version.
-import           Problem11  (Encoding (Multiple, Single))
-import           Test.HUnit (Test (TestList), (~?=))
+import Problem11  (Encoding (Multiple, Single))
+import Test.HUnit (Test (TestList), (~?=))
 
-decodeModified :: [Encoding a] -> [a]
+decodeModified ∷ [Encoding a] → [a]
 decodeModified = concatMap expandEncoding
   where
-    expandEncoding :: Encoding a -> [a]
+    expandEncoding ∷ Encoding a → [a]
     expandEncoding (Single a)     = [a]
     expandEncoding (Multiple i a) = replicate i a
 
