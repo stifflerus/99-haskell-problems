@@ -12,6 +12,7 @@ import qualified Problem09Test (test)
 import qualified Problem10Test (test)
 import qualified Problem11Test (test)
 import qualified Problem12Test (test)
+import qualified Problem13Test (test)
 import qualified Problem14Test (test)
 import qualified Problem15Test (test)
 import           Test.HUnit    (Counts, Test (TestList), runTestTT)
@@ -33,6 +34,7 @@ testCases =
     , Problem10Test.test
     , Problem11Test.test
     , Problem12Test.test
+    , Problem13Test.test
     , Problem14Test.test
     , Problem15Test.test
     ]
