@@ -3,7 +3,7 @@ module Problem13Test
   ) where
 
 import           Problem13  (Encoding (Multiple, Single), encodeDirect)
-import           Test.HUnit (Test (TestCase, TestList), (~?=))
+import           Test.HUnit (Test (TestList), (~?=))
 
 test =
   TestList
