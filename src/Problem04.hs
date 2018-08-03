@@ -3,6 +3,6 @@ module Problem04
   ) where
 
 -- | (*) Find the number of elements of a list.
-myLength :: [a] -> Int
+myLength :: Num b => [a] -> b
 myLength [] = 0
 myLength x  = 1 + myLength (tail x)
