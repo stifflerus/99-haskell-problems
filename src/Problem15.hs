@@ -2,6 +2,8 @@ module Problem15
   ( repli
   ) where
 
+import           Data.List (genericReplicate)
+
 -- | (**) Replicate the elements of a list a given number of times.
-repli :: [a] -> Int -> [a]
-repli a i = concatMap (replicate i) a
+repli :: (Integral b) => [a] -> b -> [a]
+repli a i = concatMap (genericReplicate i) a

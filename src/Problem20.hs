@@ -3,7 +3,7 @@ module Problem20
   ) where
 
 -- | (*) Remove the K'th element from a list.
-removeAt :: Int -> [a] -> (a, [a])
+removeAt :: (Eq b, Num b) => b -> [a] -> (a, [a])
 removeAt 1 (x:xs) = (x, xs)
 removeAt n (x:xs) = (fst next, x : snd next)
   where
