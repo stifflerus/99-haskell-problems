@@ -24,6 +24,7 @@ import qualified Problem21Test (test)
 import qualified Problem22Test (test)
 import qualified Problem23Test (test)
 import qualified Problem24Test (test)
+import qualified Problem25Test (test)
 import           Test.HUnit    (Counts, Test (TestList), runTestTT)
 
 main :: IO Counts
@@ -55,4 +56,5 @@ testCases =
     , Problem22Test.test
     , Problem23Test.test
     , Problem24Test.test
+    , Problem25Test.test
     ]
