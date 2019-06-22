@@ -1,4 +1,6 @@
-module Problem26 where
+module Problem26 
+  ( combinations
+  ) where
 
 combinations :: Int -> [a] -> [[a]]
 combinations _ []     = []
